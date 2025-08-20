@@ -36,7 +36,7 @@
             this.tbfarenheit = new System.Windows.Forms.TextBox();
             this.tbkelvin = new System.Windows.Forms.TextBox();
             this.btncalcular = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnlimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -105,21 +105,21 @@
             this.btncalcular.Text = "calcular";
             this.btncalcular.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnlimpiar
             // 
-            this.button1.Location = new System.Drawing.Point(201, 195);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnlimpiar.Location = new System.Drawing.Point(201, 195);
+            this.btnlimpiar.Name = "btnlimpiar";
+            this.btnlimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnlimpiar.TabIndex = 8;
+            this.btnlimpiar.Text = "limpiar";
+            this.btnlimpiar.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.btncalcular);
             this.Controls.Add(this.tbkelvin);
             this.Controls.Add(this.tbfarenheit);
@@ -145,7 +145,7 @@
         private System.Windows.Forms.TextBox tbfarenheit;
         private System.Windows.Forms.TextBox tbkelvin;
         private System.Windows.Forms.Button btncalcular;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnlimpiar;
     }
 }
 
