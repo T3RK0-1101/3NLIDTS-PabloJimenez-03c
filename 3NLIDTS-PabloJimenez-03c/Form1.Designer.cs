@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -102,29 +103,33 @@
             // 
             // btncalcular
             // 
+            this.btncalcular.BackColor = System.Drawing.Color.YellowGreen;
             this.btncalcular.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcular.Location = new System.Drawing.Point(120, 195);
+            this.btncalcular.Location = new System.Drawing.Point(110, 195);
             this.btncalcular.Name = "btncalcular";
-            this.btncalcular.Size = new System.Drawing.Size(75, 29);
+            this.btncalcular.Size = new System.Drawing.Size(85, 29);
             this.btncalcular.TabIndex = 7;
             this.btncalcular.Text = "Calcular";
-            this.btncalcular.UseVisualStyleBackColor = true;
+            this.btncalcular.UseVisualStyleBackColor = false;
+            this.btncalcular.Click += new System.EventHandler(this.btncalcular_Click);
             // 
             // btnlimpiar
             // 
+            this.btnlimpiar.BackColor = System.Drawing.Color.Crimson;
             this.btnlimpiar.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlimpiar.Location = new System.Drawing.Point(201, 195);
             this.btnlimpiar.Name = "btnlimpiar";
-            this.btnlimpiar.Size = new System.Drawing.Size(75, 29);
+            this.btnlimpiar.Size = new System.Drawing.Size(85, 29);
             this.btnlimpiar.TabIndex = 8;
             this.btnlimpiar.Text = "Limpiar";
-            this.btnlimpiar.UseVisualStyleBackColor = true;
+            this.btnlimpiar.UseVisualStyleBackColor = false;
+            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(342, 296);
             this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.btncalcular);
             this.Controls.Add(this.tbkelvin);
@@ -134,6 +139,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
